@@ -1,0 +1,53 @@
+<div class="badge">Frontend Project</div>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <title>Gerador de Componentes CSS</title>
+</head>
+<body>
+
+  <h1>Gerador de <span>Componentes CSS</span> ⚡</h1>
+  <p>Digite um componente ou animação e visualize o resultado em tempo real.</p>
+
+  <textarea
+    rows="3"
+    class="caixa-texto"
+    placeholder="Ex: bola vermelha quicando"
+  ></textarea>
+
+  <div class="botoes-exemplo">
+    <button class="exemplo" data-texto="bola vermelha quicando">Bola quicando</button>
+    <button class="exemplo" data-texto="quadrado azul girando">Quadrado girando</button>
+    <button class="exemplo" data-texto="botão verde com sombra">Botão com sombra</button>
+  </div>
+
+  <button class="botao-gerar">Gerar Código ⚡</button>
+
+  <div class="resultado">
+    <div class="coluna">
+      <div class="titulo-linha">
+        <h2>Código</h2>
+        <button class="botao-copiar">Copiar</button>
+      </div>
+      <pre class="bloco-codigo"></pre>
+    </div>
+
+    <div class="coluna">
+  <div class="titulo-linha">
+    <h2>Preview</h2>
+    <button class="botao-copiar invisivel">Copiar</button>
+  </div>
+  <iframe class="resultado-codigo"></iframe>
+</div>
+
+
+  <script src="scripts.js" defer></script>
+</body>
+</html>
